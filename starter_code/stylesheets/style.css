@@ -8,3 +8,722 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 6rem;
+    line-height: 6.2rem;
+    font-weight: 600;
+    max-width: 500px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.3rem;
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: #540B51;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.3rem;
+    padding-bottom: 20px;
+}
+
+button {
+    min-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 15px;
+    border-radius: 2px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    border: 0px;
+}
+
+.white {
+    color: white;
+}
+
+.btn-purple {
+    background-color: #540B51;
+    color: white;
+    border: none;
+    border: 1px solid #540B51;
+}
+
+.btn-white {
+    background-color: white;
+    color: #540B51;
+    border: 1px solid white;
+}
+
+.btn-border-white {
+    background-color: #540B51;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-border-purple {
+    background-color: transparent;
+    color: #540B51;
+    border: 1px solid #540B51;
+}
+
+nav {
+    background-color: #540B51;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 20px 20px;
+}
+
+nav a {
+    color: white;
+    letter-spacing: .5px;
+    font-size: .95rem;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#menu .logo {
+    height: 25px;
+    margin-right: 25px;
+}
+
+header, #menu, #menu ul, #nav-items, #login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: auto 15px;
+
+}
+
+nav .free-trial {
+    display: inline-block;
+    background-color: white;
+    padding: 14px 20px;
+    color: #540B51;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#btn-search, #btn-menu {
+    background-color: #540B51;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #540B51;
+    min-height: 750px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#hero-text {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-bottom: 50px;
+}
+
+#hero-text > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+}
+
+#hero-text em {
+    color: #E9AE2F;
+    font-weight: 600;
+}
+
+#signup {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#signup button {
+    min-width: 280px;
+    border: none;
+}
+
+.email-signup {
+    color: #540B51;
+}
+
+.google-signup { 
+    position: relative;
+    background-color: #4285F4; 
+    color: white;
+    padding-right: 10px;
+}
+
+#signup button > img {
+    position: absolute;
+    left: 10px;
+    height: 25px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+#app-preview {
+    overflow: hidden;
+}
+
+#app-preview img {
+    width: 500px;
+}
+
+#companies {
+    background-color: #F3EAE2;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#companies p {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom:40px;
+}
+
+#companies img {
+    height: 35px;
+}
+
+#companies img[src*=target], #companies img[src*=nasa] {
+    height: 45px;
+}
+
+#companies .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.feature {
+    background-color: #F3EAE2;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-1 {
+    padding-top: 100px;
+}
+
+.feature-3 {
+    padding-bottom: 100px;
+}
+
+.feature img {
+    width: 40vw;
+}
+
+.feature img.mobile {
+    display: none;
+}
+
+.feature .feature-text {
+    max-width: 350px;
+    margin: auto;
+}
+
+.feature p {
+    margin-bottom: 20px;
+}
+
+.feature a {
+    color: #5A8CB3;
+}
+
+.feature a::after {
+    content: url("../images/icon-arrow-right.png");
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+#team {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#team > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: .8rem;
+}
+
+#team li {
+    width: 15%;
+}
+
+#team li span {
+    margin-top: 80px;
+    display: block;
+    color: #540B51;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#team li p {
+    font-size: .9rem;
+    line-height: 1.2rem;
+    font-weight: 800;
+}
+
+.discover{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#our-hq {
+    height: 160px;
+    background-color: #540B51;
+    clip-path: ellipse(70vw 250px at center 50px);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#our-hq > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+footer { 
+    background-color: white; 
+    padding: 40px;
+}
+
+footer .logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-links ul li:first-child {
+    font-weight: 800;
+}
+
+footer .footer-links ul li:not(:first-child) {
+    color: #454245;
+}
+
+footer .footer-links li {
+    font-size: .9rem;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer hr {
+    border-color: transparent;
+    background-color: #ececec;
+    margin: 20px auto;
+}
+
+.footer-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: .85rem;
+}
+
+ul.footer-nav :nth-last-child(2)::before {
+    vertical-align: middle;
+    content: url('../images/icon-region.png');
+    background-size: 20px 10px;
+    margin-right: 8px;
+}
+
+ul.footer-nav :last-child::before {
+    vertical-align: middle;
+    content: url('../images/icon-download.png');
+    background-size: 20px 10px;
+    margin-right: 8px;
+}
+
+ul.footer-nav :last-child {
+    color: #0068A1;
+}
+
+footer .social-icons {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.social-icons i {
+    font-size: 22px;
+}
+
+footer small {
+    font-size: .7rem;
+    font-weight: 500;
+    color: #454245;
+}
+
+@media only screen and (max-width: 1440px) {
+    
+    header {
+        background-image: url('../images/background-singup.png');
+        justify-content: space-between;
+    }
+    
+    nav a {
+        font-size: 1rem;
+    }
+
+    #signup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    button {
+        margin-bottom: 15px;
+    }
+
+    #hero-text button {
+        width: 100%;
+    }
+
+    #hero-text {
+        width: 60%;
+    }
+
+    #app-preview {
+        width: 40%;
+    }
+
+    #btn-search {
+        width: auto;
+    }
+
+    #companies .logos {
+        width: 100%;
+    }
+
+    footer .social-icons {
+        width: 12%;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #btn-menu {
+        display: block;
+    }
+
+    #menu > ul {
+        display: none;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #btn-menu {
+        display: flex;
+        margin-left: 25px;
+    }
+
+    h1 {
+        padding-bottom: 50px;
+    }
+
+    #hero-text > p {
+        font-size: 1.3rem;
+    }
+
+    #companies img {
+        height: 30px;
+    }
+    
+    #companies img[src*=target], #companies img[src*=nasa] {
+        height: 40px;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature img {
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+
+    .feature .feature-text {
+        max-width: 70%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .feature-2 { 
+        display:flex; 
+        justify-content: end;
+    }
+
+    .feature-2 div:last-child {
+        order: -3;
+        text-align: right;    
+    }
+
+    #our-hq > div {
+        flex-direction: column;
+    }
+
+    #our-hq {
+        padding-top: 50px;
+        height: 170px;
+        display: block;
+    }
+
+    #our-hq button {
+        margin-right: 0;
+        width: 80%;
+        display: block;
+    }
+
+    footer .social-icons {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    header {
+        min-height: auto;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        width: auto;
+        max-width: none;
+        min-width: none;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    #hero-text {
+        width: 90%;
+        justify-content: center;
+    }
+
+    #app-preview {
+        width: 100%;
+    }
+
+    .feature {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .feature-2 { 
+        display:flex; 
+        justify-content: end;
+    }
+
+    .feature-2 div:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .feature img.mobile {
+        display: block;
+    }
+
+    .feature img.desktop {
+        display: none;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+    }
+
+    .logos img {
+        margin-bottom: 30px;
+    }
+
+    #companies {
+        padding-bottom: 30px;
+    }
+
+    .feature-1 {
+        padding-top: 0;
+    }
+
+    .feature img {
+        width: 90vw;
+    }
+
+    .feature .feature-text {
+        max-width: 90%;
+    }
+
+    .feature-3 {
+        padding-bottom: 50px;
+    }
+
+    #team {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .discover {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .discover button {
+        margin-right: 0;
+        display: block;
+        max-width: 100%;
+    }
+
+    #team > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team li {
+        width: 50%;
+    }
+
+    #our-hq {
+        margin-bottom: 60px;
+        height: 190px;
+        clip-path: ellipse(70vw 200px at center 120px);
+    }
+
+    footer {
+        padding: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    footer .footer-links li:not(:first-child) {
+        font-size: .8rem;
+    }
+
+    .footer-links li :not(:last-child) {
+        padding-right: 10px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-nav li:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    footer .social-icons {
+        width: 100%;
+    }
+
+    footer small {
+        padding-bottom: 30px;
+    }
+}
